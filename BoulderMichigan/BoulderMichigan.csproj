@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAA45AA3-BC06-464A-A285-32661D2D4A7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BoulderMichigan</RootNamespace>
+    <AssemblyName>BoulderMichigan</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\emily\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0A4464690F46B2A380229384C3D7F8980F28F21F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BoulderMichigan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.5\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=18.3460.0.52, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.18.3.0.52\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=18.3460.0.52, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.18.3.0.52\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=18.3460.0.52, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.WinForms.18.3.0.52\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10PunchPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10PunchPass.Designer.cs">
+      <DependentUpon>10PunchPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoulderingClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoulderingClassForm.Designer.cs">
+      <DependentUpon>BoulderingClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes.Designer.cs">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouplesBoulderAnnualMembershipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouplesBoulderAnnualMembershipForm.Designer.cs">
+      <DependentUpon>CouplesBoulderAnnualMembershipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouplesBoulderDayPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouplesBoulderDayPass.Designer.cs">
+      <DependentUpon>CouplesBoulderDayPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CouplesBoulderMonthlyMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouplesBoulderMonthlyMembership.Designer.cs">
+      <DependentUpon>CouplesBoulderMonthlyMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyRates.Designer.cs">
+      <DependentUpon>DailyRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipmentRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipmentRental.Designer.cs">
+      <DependentUpon>EquipmentRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyBoulderAnnualMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyBoulderAnnualMembership.Designer.cs">
+      <DependentUpon>FamilyBoulderAnnualMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyBoulderMonthlyMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyBoulderMonthlyMembership.Designer.cs">
+      <DependentUpon>FamilyBoulderMonthlyMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQ.Designer.cs">
+      <DependentUpon>FAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAQAnswer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQAnswer2.Designer.cs">
+      <DependentUpon>FAQAnswer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAQAnswer3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQAnswer3.Designer.cs">
+      <DependentUpon>FAQAnswer3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAQImNewHereAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAQImNewHereAnswer.Designer.cs">
+      <DependentUpon>FAQImNewHereAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessLabDayPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FitnessLabDayPass.Designer.cs">
+      <DependentUpon>FitnessLabDayPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FitnessLabAnnualMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FitnessLabAnnualMembership.Designer.cs">
+      <DependentUpon>frm_FitnessLabAnnualMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FitnessLabMonthlyMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FitnessLabMonthlyMembership.Designer.cs">
+      <DependentUpon>frm_FitnessLabMonthlyMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FtinessLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FtinessLab.Designer.cs">
+      <DependentUpon>FtinessLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupRates.Designer.cs">
+      <DependentUpon>GroupRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupsLessThan10Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupsLessThan10Book.Designer.cs">
+      <DependentUpon>GroupsLessThan10Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupsMoreThan10Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupsMoreThan10Book.Designer.cs">
+      <DependentUpon>GroupsMoreThan10Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualBoulderAnnualMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndividualBoulderAnnualMembership.Designer.cs">
+      <DependentUpon>IndividualBoulderAnnualMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualBoulderDayPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndividualBoulderDayPass.Designer.cs">
+      <DependentUpon>IndividualBoulderDayPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberships.Designer.cs">
+      <DependentUpon>memberships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualBoulderMonthlyMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndividualBoulderMonthlyMembership.Designer.cs">
+      <DependentUpon>IndividualBoulderMonthlyMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specials.Designer.cs">
+      <DependentUpon>Specials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waiver.Designer.cs">
+      <DependentUpon>Waiver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="10PunchPass.resx">
+      <DependentUpon>10PunchPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoulderingClassForm.resx">
+      <DependentUpon>BoulderingClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes.resx">
+      <DependentUpon>Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouplesBoulderAnnualMembershipForm.resx">
+      <DependentUpon>CouplesBoulderAnnualMembershipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouplesBoulderDayPass.resx">
+      <DependentUpon>CouplesBoulderDayPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouplesBoulderMonthlyMembership.resx">
+      <DependentUpon>CouplesBoulderMonthlyMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyRates.resx">
+      <DependentUpon>DailyRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentRental.resx">
+      <DependentUpon>EquipmentRental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyBoulderAnnualMembership.resx">
+      <DependentUpon>FamilyBoulderAnnualMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyBoulderMonthlyMembership.resx">
+      <DependentUpon>FamilyBoulderMonthlyMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQ.resx">
+      <DependentUpon>FAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQAnswer2.resx">
+      <DependentUpon>FAQAnswer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQAnswer3.resx">
+      <DependentUpon>FAQAnswer3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAQImNewHereAnswer.resx">
+      <DependentUpon>FAQImNewHereAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FitnessLabDayPass.resx">
+      <DependentUpon>FitnessLabDayPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FitnessLabAnnualMembership.resx">
+      <DependentUpon>frm_FitnessLabAnnualMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FitnessLabMonthlyMembership.resx">
+      <DependentUpon>frm_FitnessLabMonthlyMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FtinessLab.resx">
+      <DependentUpon>FtinessLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupRates.resx">
+      <DependentUpon>GroupRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupsLessThan10Book.resx">
+      <DependentUpon>GroupsLessThan10Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupsMoreThan10Book.resx">
+      <DependentUpon>GroupsMoreThan10Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualBoulderAnnualMembership.resx">
+      <DependentUpon>IndividualBoulderAnnualMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualBoulderDayPass.resx">
+      <DependentUpon>IndividualBoulderDayPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberships.resx">
+      <DependentUpon>memberships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndividualBoulderMonthlyMembership.resx">
+      <DependentUpon>IndividualBoulderMonthlyMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specials.resx">
+      <DependentUpon>Specials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waiver.resx">
+      <DependentUpon>Waiver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BoulderMichigan_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MG_0667.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MG_0713.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\markus-spiske-VQpOgh5R68I-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alex-motoc-N3yq-z4UFHQ-unsplash-medium.jpg" />
+    <None Include="Resources\alex-motoc-N3yq-z4UFHQ-unsplash-med-large.jpg" />
+    <None Include="Resources\victor-xok-oyPLmauJzzo-unsplash-med-large.jpg" />
+    <None Include="Resources\victor-xok-oyPLmauJzzo-unsplash-smaller-med-large.jpg" />
+    <None Include="Resources\victor-xok-oyPLmauJzzo-unsplash-mediumer.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-cropped.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-cropped-smaller.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-cropped-smallerer.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-cropped_med.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-verysmall.jpg" />
+    <None Include="Resources\marian-kroell-QtJN2yiUvSo-unsplash-500.jpg" />
+    <None Include="Resources\Waiver.bmp" />
+    <EmbeddedResource Include="Resources\Waiver.txt" />
+    <EmbeddedResource Include="Waiver\Waiver.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
